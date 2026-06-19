@@ -109,6 +109,30 @@ p {
   max-width: 68ch;
 }
 
+.cta-button {
+  display: inline-block;
+  margin-top: 1.1rem;
+  padding: 0.62rem 1.05rem;
+  border-radius: 999px;
+  border: 1px solid #77d2ff;
+  color: #071420;
+  background: linear-gradient(180deg, #77d2ff, #4ec0ff);
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(78, 192, 255, 0.25);
+  filter: brightness(1.03);
+}
+
+.cta-button:focus-visible {
+  outline: 2px solid #9fddff;
+  outline-offset: 2px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
