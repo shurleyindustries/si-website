@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Deflock | Shurley Industries</title>
+    <title>DeFlock | Shurley Industries</title>
     <meta
       name="description"
       content="Resources and links documenting Flock Safety, Englewood's deployment, and the privacy and civil-liberties risks of automated license plate recognition."
@@ -20,7 +20,9 @@
         --border: rgba(255, 255, 255, 0.12);
       }
 
-      * { box-sizing: border-box; }
+      * {
+        box-sizing: border-box;
+      }
 
       body {
         margin: 0;
@@ -35,10 +37,10 @@
       }
 
       header {
-        border-bottom: 1px solid var(--border);
-        background: rgba(13, 17, 23, 0.9);
         position: sticky;
         top: 0;
+        background: rgba(13, 17, 23, 0.9);
+        border-bottom: 1px solid var(--border);
         backdrop-filter: blur(8px);
       }
 
@@ -54,8 +56,8 @@
       }
 
       .brand {
-        font-weight: bold;
         color: var(--text);
+        font-weight: bold;
         text-decoration: none;
       }
 
@@ -95,8 +97,23 @@
         padding: 2rem;
       }
 
-      h1, h2, h3 {
+      .hero p:last-child {
+        margin-bottom: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
         line-height: 1.2;
+        margin-top: 0;
+      }
+
+      h2 {
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin-top: 0;
       }
 
       .summary-grid {
@@ -114,10 +131,10 @@
 
       .resource-list {
         list-style: none;
-        padding: 0;
-        margin: 0;
         display: grid;
         gap: 0.8rem;
+        padding: 0;
+        margin: 0;
       }
 
       .resource-list li {
@@ -127,9 +144,26 @@
         padding: 1rem 1.15rem;
       }
 
+      .resource-list li strong {
+        display: block;
+        margin-bottom: 0.2rem;
+      }
+
       .small {
         color: var(--muted);
         font-size: 0.95rem;
+      }
+
+      textarea {
+        width: 100%;
+        min-height: 420px;
+        resize: vertical;
+        background: #111827;
+        color: #e5e7eb;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 10px;
+        padding: 1rem;
+        font: 0.95rem/1.5 monospace;
       }
 
       footer {
@@ -149,7 +183,7 @@
             <li><a href="/index.html">HOME</a></li>
             <li><a href="/shurwear.html">ShurWear</a></li>
             <li><a href="/electronics-repair.html">SI Electronics Repair</a></li>
-            <li><a href="/deflock/" aria-current="page">Deflock</a></li>
+            <li><a href="/deflock/" aria-current="page">DeFlock</a></li>
           </ul>
         </nav>
       </div>
@@ -157,17 +191,29 @@
 
     <main>
       <section class="hero">
-        <h1>Deflock</h1>
+        <h1>DeFlock</h1>
         <p>
-          Flock Safety sells automated license plate recognition (ALPR) systems as a public safety tool, but a growing body of reporting and civil-liberties research shows these systems create a permanently searchable record of ordinary people's movements with weak oversight, easy abuse, and limited evidence that they actually reduce crime.
+          Flock Safety sells automated license plate recognition (ALPR) systems as a public safety tool, but a growing body of reporting and civil-liberties research shows these systems create a permanently searchable record of ordinary people's movements with weak oversight, easy abuse, and limited evidence that they actually reduce crime.
         </p>
         <p>
           In communities like Englewood, Colorado, public-private surveillance partnerships can normalize dragnet monitoring of drivers without meaningful transparency, independent accountability, or a demonstrated safety return.
         </p>
         <p>
           <strong>Public map:</strong>
-          <a href="https://maps.deflock.org/?lat=39.6482&lng=-104.9880&zoom=11.00" target="_blank" rel="noopener noreferrer">Explore the Deflock map</a>
+          <a href="https://maps.deflock.org/?lat=39.6482&lng=-104.9880&zoom=11.00" target="_blank" rel="noopener noreferrer">Explore the DeFlock map</a>
         </p>
+      </section>
+      
+      <section>
+        <h2>Facts about Flock in Englewood, CO</h2>
+        <p>We acquired public records from the City of Englewood, CO regarding its Flock Safety deployment. Here are some key points:</p>
+        <ul>
+          <li>Englewood has 10 permanent Flock ALPR cameras, 2 mobile units, and 1 non-ALPR camera trailer.</li>
+          <li>These cameras were installed silently between July 2023 and August 2025, with no public notice or input.</li>
+          <li>When asked, city officials declined to provide specific locations of the cameras, as well as any privacy impact assessments, legal reviews, policy analyses, or risk assessments.</li>
+          <li>Placement criteria and FAQ responses are available on the city's transparency page.</li>
+          <li>Public records confirm limited reported hits leading to recovered stolen vehicles.</li>
+        </ul>
       </section>
 
       <section>
@@ -189,6 +235,13 @@
             <h3>Oversight and abuse risk</h3>
             <p>Private contractors and police agencies can search data with little public accountability or clear limits.</p>
           </div>
+          <div class="card">
+            <h3>Warrantless tracking</h3>
+            <p>ALPR systems can be used to track people without a warrant, raising serious Fourth Amendment concerns.</p>
+          </div>
+          <div class="card">
+            <h3>Lack of transparency</h3>
+            <p>The 13 Flock cameras in Englewood were installed silently with zero public notice or input, between July 2023 and August 2025.</p>
         </div>
       </section>
 
@@ -197,7 +250,7 @@
         <p>
           Send this template to your city council members and let them know that permanent removal of all Flock Safety devices and related vehicle-tracking technologies is the only responsible path.
         </p>
-        <textarea readonly rows="22" style="width: 100%; min-height: 420px; resize: vertical; background: #111827; color: #e5e7eb; border: 1px solid rgba(255,255,255,0.12); border-radius: 10px; padding: 1rem; font: 0.95rem/1.5 monospace;">
+        <textarea readonly rows="22">
 Subject: Demand the permanent removal of all Flock Safety cameras and related surveillance technology
 
 Dear Mayor and City Council Members,
@@ -214,16 +267,12 @@ I urge you to:
 2. Prohibit the installation or operation of similar surveillance systems unless they are independently evaluated, subject to strict public oversight, and clearly justified by demonstrable public safety benefits.
 3. Require full transparency on data retention, sharing, access logs, and vendor contracts.
 4. Decline any future renewal, expansion, or private-public partnership that would prolong mass vehicle surveillance.
-5. Commit to civil-liberties protections that prioritize residents’ privacy and due process over convenience for policing systems.
+5. Commit to civil-liberties protections that prioritize residents' privacy and due process over convenience for policing systems.
 
-Our city should be focused on proven, targeted, accountable approaches to public safety — not permanently tracking the everyday movement of the public.
+Our city should be focused on proven, targeted, accountable approaches to public safety, not permanently tracking the everyday movement of the public.
 
 Sincerely,
 [Your Name]
-[Your Address]
-[City, State ZIP]
-[Email Address]
-[Phone Number]
         </textarea>
       </section>
 
@@ -238,74 +287,6 @@ Sincerely,
             <strong><a href="https://www.englewoodco.gov/government/city-departments/police/flock-safety-transparency" target="_blank" rel="noopener noreferrer">City of Englewood | Flock Safety Transparency</a></strong>
             <div class="small">The municipal transparency page for the city’s Flock Safety implementation. This is the key local source for understanding how Englewood frames the program.</div>
           </li>
-          <li>
-            <strong><a href="https://www.englewoodco.gov/" target="_blank" rel="noopener noreferrer">City of Englewood</a></strong>
-            <div class="small">City government homepage for public records, municipal departments, and local policy information.</div>
-          </li>
-          <li>
-            <strong><a href="https://www.englewoodco.gov/government/city-departments/police" target="_blank" rel="noopener noreferrer">Englewood Police Department</a></strong>
-            <div class="small">Official police department page and broader context for local department practices.</div>
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Privacy, civil-liberties, and surveillance risks</h2>
-        <ul class="resource-list">
-          <li>
-            <strong><a href="https://www.aclu.org/issues/privacy-technology/surveillance-technologies/automated-license-plate-readers" target="_blank" rel="noopener noreferrer">ACLU | Automated License Plate Readers</a></strong>
-            <div class="small">A leading overview of the privacy harms and accountability problems posed by ALPR systems.</div>
-          </li>
-          <li>
-            <strong><a href="https://www.eff.org/issues/automated-license-plate-readers" target="_blank" rel="noopener noreferrer">EFF | Automated License Plate Readers</a></strong>
-            <div class="small">The Electronic Frontier Foundation’s resources on how ALPRs build trails of location data and why surveillance should be treated as a civil-liberties issue.</div>
-          </li>
-          <li>
-            <strong><a href="https://epic.org/issues/privacy/surveillance/" target="_blank" rel="noopener noreferrer">EPIC | Surveillance and Privacy</a></strong>
-            <div class="small">Electronic Privacy Information Center resources on surveillance, data retention, and the dangers of broad monitoring systems.</div>
-          </li>
-          <li>
-            <strong><a href="https://www.privacyinternational.org/" target="_blank" rel="noopener noreferrer">Privacy International</a></strong>
-            <div class="small">Global digital-rights reporting and advocacy on surveillance technologies and government data collection.</div>
-          </li>
-          <li>
-            <strong><a href="https://www.brennancenter.org/our-work/research-reports/automated-license-plate-readers" target="_blank" rel="noopener noreferrer">Brennan Center | Automated License Plate Readers</a></strong>
-            <div class="small">Public-policy analysis of the risks, legal concerns, and governance gaps associated with ALPR surveillance.</div>
-          </li>
-          <li>
-            <strong><a href="https://www.vera.org/publications/automated-license-plate-readers" target="_blank" rel="noopener noreferrer">Vera Institute | Automated License Plate Readers</a></strong>
-            <div class="small">Policy research examining how ALPR systems affect civil liberties and the evidentiary value of their outputs.</div>
-          </li>
-        </ul>
-      </section>
-
-      <section>
-        <h2>Research, reporting, and analysis questioning effectiveness</h2>
-        <ul class="resource-list">
-          <li>
-            <strong><a href="https://www.vera.org/publications/automated-license-plate-readers" target="_blank" rel="noopener noreferrer">Vera Institute: ALPR policy analysis</a></strong>
-            <div class="small">One of the more accessible public-policy examinations of how ALPR systems are used and what they actually deliver in practice.</div>
-          </li>
-          <li>
-            <strong><a href="https://www.aclu.org/news/privacy-technology/automated-license-plate-recognition-systems-signal-a-new-era-of-surveillance" target="_blank" rel="noopener noreferrer">ACLU | The new era of surveillance</a></strong>
-            <div class="small">Reporting and analysis on how wide-area detection systems create a surveillance environment that looks like ordinary policing but operates on an unprecedented scale.</div>
-          </li>
-          <li>
-            <strong><a href="https://www.eff.org/deeplinks/2021/08/license-plate-readers-are-not-safety-solution" target="_blank" rel="noopener noreferrer">EFF | Why ALPRs are not a safety solution</a></strong>
-            <div class="small">Critique of the idea that public safety can be improved simply by collecting larger volumes of location data.</div>
-          </li>
-          <li>
-            <strong><a href="https://www.brennancenter.org/our-work/analysis-opinion/cities-should-be-skeptical-license-plate-reader-technology" target="_blank" rel="noopener noreferrer">Brennan Center | Cities should be skeptical</a></strong>
-            <div class="small">A clear explanation of why municipal adoption needs careful scrutiny and strong guardrails.</div>
-          </li>
-          <li>
-            <strong><a href="https://www.nytimes.com/topic/company/flock-safety" target="_blank" rel="noopener noreferrer">New York Times coverage of Flock Safety</a></strong>
-            <div class="small">Journalistic reporting on the company, its contracts, and the growing debate around its surveillance products.</div>
-          </li>
-          <li>
-            <strong><a href="https://www.washingtonpost.com/technology/2024/02/08/flock-safety-license-plate-readers/" target="_blank" rel="noopener noreferrer">Washington Post reporting on ALPR surveillance</a></strong>
-            <div class="small">Independent reporting on how ALPR networks expand surveillance, their costs, and the limits of their deterrent effect.</div>
-          </li>
         </ul>
       </section>
 
@@ -313,20 +294,108 @@ Sincerely,
         <h2>Useful public-interest reference material</h2>
         <ul class="resource-list">
           <li>
-            <strong><a href="https://www.americanprogress.org/article/what-is-automated-license-plate-recognition-and-why-the-public-should-be-concerned/" target="_blank" rel="noopener noreferrer">Center for American Progress | What is ALPR and why should the public be concerned?</a></strong>
-            <div class="small">Explains the technology and why it raises serious concerns about civil liberties and unequal enforcement.</div>
+            <strong><a href="https://www.englewoodco.gov/government/city-departments/police/flock-safety-transparency" target="_blank" rel="noopener noreferrer">City of Englewood, CO | Flock Safety Transparency page</a></strong>
+            <div class="small">Official city page detailing Englewood Police Department’s use of Flock ALPR cameras (10 fixed + mobile units), data retention (rolling 30 days), sharing limited to Colorado agencies, placement criteria, and FAQ responses on capabilities and safeguards.</div>
           </li>
+
+          <li>
+            <strong><a href="https://englewoodgov.civicweb.net/document/451818/" target="_blank" rel="noopener noreferrer">Englewood City documents | Flock camera counts and usage responses</a></strong>
+            <div class="small">Public records responses confirming 10 permanent + 2 mobile Flock cameras plus a non-ALPR trailer, data storage practices, and limited reported hits leading to recovered stolen vehicles.</div>
+          </li>
+
+          <li>
+            <strong><a href="https://www.aclu.org/news/privacy-technology/despite-new-updates-flocks-creepy-cameras-remain-major-civil-liberties-threat" target="_blank" rel="noopener noreferrer">ACLU | Despite ‘New’ Updates, Flock’s Creepy Cameras Remain Major Civil Liberties Threat</a></strong>
+            <div class="small">Detailed critique of Flock’s announced reforms (shorter retention, audit tools, case codes), arguing they fail to address core mass-surveillance problems, warrantless tracking, and abuse risks.</div>
+          </li>
+
+          <li>
+            <strong><a href="https://www.aclu.org/news/privacy-technology/tracking-alpr-cameras/flock-safety-credibility-lost-as-it-repeatedly-lies-to-city-councils-police-departments-and-public-across-the-country" target="_blank" rel="noopener noreferrer">ACLU | Flock Safety Credibility Lost as it Repeatedly Lies to City Councils, Police Departments, and Public</a></strong>
+            <div class="small">Documents a pattern of misleading statements by Flock to officials and the public about capabilities (heat maps, federal access, privacy protections) and the inadequacy of its search-reason tools.</div>
+          </li>
+
+          <li>
+            <strong><a href="https://www.aclu.org/campaigns-initiatives/get-the-flock-out" target="_blank" rel="noopener noreferrer">ACLU | Get The Flock Out campaign</a></strong>
+            <div class="small">National campaign page with facts on Flock’s scale (120,000+ cameras), low hit-to-crime rates, misread rates, and tools for communities to oppose or end ALPR contracts.</div>
+          </li>
+
+          <li>
+            <strong><a href="https://www.aclu.org/get-the-flock-out-toolkit" target="_blank" rel="noopener noreferrer">ACLU | Get The Flock Out Toolkit</a></strong>
+            <div class="small">Practical advocacy resources including public-records request templates, model ordinances, talking points, and links to maps and audit trackers for challenging local Flock deployments.</div>
+          </li>
+
+          <li>
+            <strong><a href="https://www.eff.org/deeplinks/2025/12/effs-investigations-expose-flock-safetys-surveillance-abuses-2025-review" target="_blank" rel="noopener noreferrer">EFF | EFF’s Investigations Expose Flock Safety’s Surveillance Abuses: 2025 in Review</a></strong>
+            <div class="small">Summary of EFF research showing Flock used to track protesters, target groups with discriminatory language, and enable nationwide warrantless searches, plus expansion into audio detection.</div>
+          </li>
+
+          <li>
+            <strong><a href="https://www.eff.org/deeplinks/2025/11/how-cops-are-using-flock-safetys-alpr-network-surveil-protesters-and-activists" target="_blank" rel="noopener noreferrer">EFF | How Cops Are Using Flock Safety’s ALPR Network to Surveil Protesters and Activists</a></strong>
+            <div class="small">Analysis of millions of Flock search logs revealing hundreds of queries tied to political demonstrations and activist groups across dozens of agencies.</div>
+          </li>
+
+          <li>
+            <strong><a href="https://www.atlasofsurveillance.org/" target="_blank" rel="noopener noreferrer">EFF Atlas of Surveillance</a></strong>
+            <div class="small">Searchable national database of police surveillance technologies, including Flock ALPR deployments by agency and location (searchable for Englewood and Colorado agencies).</div>
+          </li>
+
+          <li>
+            <strong><a href="https://www.cnn.com/2026/07/26/us/flock-cameras-surveillance-abuse" target="_blank" rel="noopener noreferrer">CNN | Inside the growing police use and misuse of Flock’s license-plate reader cameras</a></strong>
+            <div class="small">Reporting on documented officer abuses (stalking romantic partners), limited independent effectiveness studies, and ACLU concerns over warrantless nationwide tracking and data sharing.</div>
+          </li>
+
+          <li>
+            <strong><a href="https://www.businessinsider.com/flock-safety-alpr-cameras-misreads-2026-3" target="_blank" rel="noopener noreferrer">Business Insider | Flock Safety’s AI Cameras Misread Plates. Innocent People Pay.</a></strong>
+            <div class="small">Investigation documenting wrongful stops, arrests, and other harms from Flock misreads, plus broader privacy and data-sharing scrutiny.</div>
+          </li>
+
+          <li>
+            <strong><a href="https://www.businessinsider.com/flock-camera-misread-license-plate-reader-california-roseville-police-2026-7" target="_blank" rel="noopener noreferrer">Business Insider | Flock Misread License Plates in 71% of Alerts It Sent Roseville Police</a></strong>
+            <div class="small">Police department analysis showing 71% of stolen/felony vehicle alerts from Flock were incorrect plate reads over two years, highlighting accuracy failures in real-world use.</div>
+          </li>
+
+          <li>
+            <strong><a href="https://www.forbes.com/sites/cyrusfarivar/2024/02/29/flock-ai-cameras-may-not-reduce-crime/" target="_blank" rel="noopener noreferrer">Forbes | Flock Installed AI Cameras In This Small City And Claimed Crime Went Down. It Went Up.</a></strong>
+            <div class="small">Investigation debunking Flock’s marketed crime-reduction claims (e.g., San Marino burglary “reductions” that were actually flat or increased), with academics calling the company’s broader “10% of crime solved” study problematic and non-peer-reviewable.</div>
+          </li>
+
+          <li>
+            <strong><a href="https://www.forbes.com/sites/thomasbrewster/2024/02/27/flock-safety-surveillance-broke-state-law/" target="_blank" rel="noopener noreferrer">Forbes | This $4 Billion Car Surveillance Startup Says It Cuts Crime. But It Likely Broke The Law.</a></strong>
+            <div class="small">Reporting on Flock’s pattern of installing cameras without required permits on state rights-of-way in multiple states, raising legal and safety concerns alongside privacy issues.</div>
+          </li>
+
+          <li>
+            <strong><a href="https://ij.org/" target="_blank" rel="noopener noreferrer">Institute for Justice | Plate Privacy Project and related litigation</a></strong>
+            <div class="small">Public-interest law firm challenging warrantless ALPR mass surveillance (including active suits involving Flock systems in Norfolk, VA and San Jose, CA) and tracking documented officer abuses.</div>
+          </li>
+
+          <li>
+            <strong><a href="https://ij.org/press-release/institute-for-justice-calls-flock-safetys-proposed-reforms-window-dressing/" target="_blank" rel="noopener noreferrer">Institute for Justice | Flock Safety’s Proposed Reforms Called ‘Window Dressing’</a></strong>
+            <div class="small">Critique arguing Flock’s voluntary changes (retention limits, audits) leave warrantless searching intact and fail to provide independent oversight of misuse detection.</div>
+          </li>
+
+          <li>
+            <strong><a href="https://deflock.me/" target="_blank" rel="noopener noreferrer">DeFlock | Crowdsourced map of ALPR cameras</a></strong>
+            <div class="small">Open, volunteer-maintained map of Flock and other ALPR locations nationwide; useful for identifying local deployments and supporting community awareness/advocacy.</div>
+          </li>
+
+          <li>
+            <strong><a href="https://haveibeenflocked.com/" target="_blank" rel="noopener noreferrer">Have I Been Flocked?</a></strong>
+            <div class="small">Tool and resource site aggregating Flock audit/search log data, agency activity, and related transparency information.</div>
+          </li>
+
+          <li>
+            <strong><a href="https://en.wikipedia.org/wiki/Flock_Safety" target="_blank" rel="noopener noreferrer">Wikipedia | Flock Safety</a></strong>
+            <div class="small">Overview page summarizing company history, products, scale, efficacy critiques (including the 71% Roseville misread rate and Forbes crime-claim challenges), privacy controversies, security issues, and legal challenges.</div>
+          </li>
+
+          <li>
+            <strong><a href="https://www.americanprogress.org/article/what-is-automated-license-plate-recognition-and-why-the-public-should-be-concerned/" target="_blank" rel="noopener noreferrer">Center for American Progress | What is Automated License Plate Recognition and why the public should be concerned?</a></strong>
+            <div class="small">Explains ALPR technology generally and the civil-liberties, equity, and oversight risks that apply to systems like Flock’s nationwide network.</div>
+          </li>
+
           <li>
             <strong><a href="https://www.cdt.org/" target="_blank" rel="noopener noreferrer">Center for Democracy &amp; Technology</a></strong>
-            <div class="small">Institutional research on privacy, surveillance, and the policy consequences of tracking technologies.</div>
-          </li>
-          <li>
-            <strong><a href="https://www.techtransparencyproject.org/" target="_blank" rel="noopener noreferrer">Tech Transparency Project</a></strong>
-            <div class="small">Investigative reporting on how surveillance technology is sold, deployed, and justified in public-sector settings.</div>
-          </li>
-          <li>
-            <strong><a href="https://www.eff.org/" target="_blank" rel="noopener noreferrer">Electronic Frontier Foundation</a></strong>
-            <div class="small">A core source for digital rights and surveillance policy research.</div>
+            <div class="small">Institutional research and policy work on privacy, surveillance technologies, data practices, and the governance of tracking systems used by law enforcement.</div>
           </li>
         </ul>
       </section>
@@ -337,13 +406,14 @@ Sincerely,
           The central question is not whether cameras can detect a plate at a given moment. The real question is whether public agencies should build mass surveillance systems that track ordinary drivers across time, collect location histories at scale, and do so with limited public accountability while claiming broad public-safety benefits.
         </p>
         <p>
-          The evidence and reporting collected here suggest that the technology’s benefits are often overstated, while its privacy and civil-liberties costs are substantial.
+          No big surprise here: the answer is no. The public-safety benefits are vastly overstated, while the privacy and civil-liberties costs are substantial.
         </p>
       </section>
     </main>
 
     <footer>
-      <p>© 2026 Shurley Industries. Deflock resource index.</p>
+      <p>© 2026 Shurley Industries. DeFlock resource index :3</p>
     </footer>
   </body>
 </html>
+
