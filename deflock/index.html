@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deflock | Shurley Industries</title>
+    <meta
+      name="description"
+      content="Resources and links documenting Flock Safety, Englewood's deployment, and the privacy and civil-liberties risks of automated license plate recognition."
+    />
+    <style>
+      :root {
+        --bg: #0d1117;
+        --panel: #161b22;
+        --panel-alt: #1f2833;
+        --text: #e5e7eb;
+        --muted: #bac0cc;
+        --accent: #8ecae6;
+        --accent-2: #f4a261;
+        --border: rgba(255, 255, 255, 0.12);
+      }
+
+      * { box-sizing: border-box; }
+
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      header {
+        border-bottom: 1px solid var(--border);
+        background: rgba(13, 17, 23, 0.9);
+        position: sticky;
+        top: 0;
+        backdrop-filter: blur(8px);
+      }
+
+      .topbar {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 1rem 1.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+
+      .brand {
+        font-weight: bold;
+        color: var(--text);
+        text-decoration: none;
+      }
+
+      nav ul {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.9rem;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav a {
+        color: var(--text);
+        text-decoration: none;
+        opacity: 0.9;
+      }
+
+      nav a[aria-current="page"] {
+        color: var(--accent-2);
+      }
+
+      main {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem 1.25rem 4rem;
+      }
+
+      section {
+        margin-bottom: 2rem;
+      }
+
+      .hero {
+        background: linear-gradient(135deg, rgba(142, 202, 230, 0.12), rgba(244, 162, 97, 0.12));
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 2rem;
+      }
+
+      h1, h2, h3 {
+        line-height: 1.2;
+      }
+
+      .summary-grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      }
+
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 1rem 1.1rem;
+      }
+
+      .resource-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: grid;
+        gap: 0.8rem;
+      }
+
+      .resource-list li {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        padding: 1rem 1.15rem;
+      }
+
+      .small {
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      footer {
+        border-top: 1px solid var(--border);
+        padding: 1.5rem 1.25rem 2.5rem;
+        color: var(--muted);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <a href="/index.html" class="brand" aria-label="Shurley Industries home">Shurley Industries</a>
+        <nav aria-label="Main">
+          <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/shurwear.html">ShurWear</a></li>
+            <li><a href="/electronics-repair.html">SI Electronics Repair</a></li>
+            <li><a href="/deflock/" aria-current="page">Deflock</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Deflock</h1>
+        <p>
+          Flock Safety sells automated license plate recognition (ALPR) systems as a public safety tool, but a growing body of reporting and civil-liberties research shows these systems create a permanently searchable record of ordinary people's movements with weak oversight, easy abuse, and limited evidence that they actually reduce crime.
+        </p>
+        <p>
+          In communities like Englewood, Colorado, public-private surveillance partnerships can normalize dragnet monitoring of drivers without meaningful transparency, independent accountability, or a demonstrated safety return.
+        </p>
+      </section>
+
+      <section>
+        <h2>Why this matters</h2>
+        <div class="summary-grid">
+          <div class="card">
+            <h3>Mass, low-visibility surveillance</h3>
+            <p>ALPR cameras collect data on everyone who passes a camera, not just people accused of crimes.</p>
+          </div>
+          <div class="card">
+            <h3>Privacy violations</h3>
+            <p>Vehicle location histories can be retained, shared, and queried long after the underlying encounter has any relevance to a crime investigation.</p>
+          </div>
+          <div class="card">
+            <h3>Questionable effectiveness</h3>
+            <p>Many reviews and watchdog studies emphasize that the technology produces lots of low-value matches, not high-confidence leads.</p>
+          </div>
+          <div class="card">
+            <h3>Oversight and abuse risk</h3>
+            <p>Private contractors and police agencies can search data with little public accountability or clear limits.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Flock Safety and Englewood, CO</h2>
+        <ul class="resource-list">
+          <li>
+            <strong><a href="https://www.flocksafety.com/" target="_blank" rel="noopener noreferrer">Flock Safety</a></strong>
+            <div class="small">Official company site for the ALPR vendor and its public safety product claims.</div>
+          </li>
+          <li>
+            <strong><a href="https://www.englewoodco.gov/government/city-departments/police/flock-safety-transparency" target="_blank" rel="noopener noreferrer">City of Englewood | Flock Safety Transparency</a></strong>
+            <div class="small">The municipal transparency page for the city’s Flock Safety implementation. This is the key local source for understanding how Englewood frames the program.</div>
+          </li>
+          <li>
+            <strong><a href="https://www.englewoodco.gov/" target="_blank" rel="noopener noreferrer">City of Englewood</a></strong>
+            <div class="small">City government homepage for public records, municipal departments, and local policy information.</div>
+          </li>
+          <li>
+            <strong><a href="https://www.englewoodco.gov/government/city-departments/police" target="_blank" rel="noopener noreferrer">Englewood Police Department</a></strong>
+            <div class="small">Official police department page and broader context for local department practices.</div>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Privacy, civil-liberties, and surveillance risks</h2>
+        <ul class="resource-list">
+          <li>
+            <strong><a href="https://www.aclu.org/issues/privacy-technology/surveillance-technologies/automated-license-plate-readers" target="_blank" rel="noopener noreferrer">ACLU | Automated License Plate Readers</a></strong>
+            <div class="small">A leading overview of the privacy harms and accountability problems posed by ALPR systems.</div>
+          </li>
+          <li>
+            <strong><a href="https://www.eff.org/issues/automated-license-plate-readers" target="_blank" rel="noopener noreferrer">EFF | Automated License Plate Readers</a></strong>
+            <div class="small">The Electronic Frontier Foundation’s resources on how ALPRs build trails of location data and why surveillance should be treated as a civil-liberties issue.</div>
+          </li>
+          <li>
+            <strong><a href="https://epic.org/issues/privacy/surveillance/" target="_blank" rel="noopener noreferrer">EPIC | Surveillance and Privacy</a></strong>
+            <div class="small">Electronic Privacy Information Center resources on surveillance, data retention, and the dangers of broad monitoring systems.</div>
+          </li>
+          <li>
+            <strong><a href="https://www.privacyinternational.org/" target="_blank" rel="noopener noreferrer">Privacy International</a></strong>
+            <div class="small">Global digital-rights reporting and advocacy on surveillance technologies and government data collection.</div>
+          </li>
+          <li>
+            <strong><a href="https://www.brennancenter.org/our-work/research-reports/automated-license-plate-readers" target="_blank" rel="noopener noreferrer">Brennan Center | Automated License Plate Readers</a></strong>
+            <div class="small">Public-policy analysis of the risks, legal concerns, and governance gaps associated with ALPR surveillance.</div>
+          </li>
+          <li>
+            <strong><a href="https://www.vera.org/publications/automated-license-plate-readers" target="_blank" rel="noopener noreferrer">Vera Institute | Automated License Plate Readers</a></strong>
+            <div class="small">Policy research examining how ALPR systems affect civil liberties and the evidentiary value of their outputs.</div>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Research, reporting, and analysis questioning effectiveness</h2>
+        <ul class="resource-list">
+          <li>
+            <strong><a href="https://www.vera.org/publications/automated-license-plate-readers" target="_blank" rel="noopener noreferrer">Vera Institute: ALPR policy analysis</a></strong>
+            <div class="small">One of the more accessible public-policy examinations of how ALPR systems are used and what they actually deliver in practice.</div>
+          </li>
+          <li>
+            <strong><a href="https://www.aclu.org/news/privacy-technology/automated-license-plate-recognition-systems-signal-a-new-era-of-surveillance" target="_blank" rel="noopener noreferrer">ACLU | The new era of surveillance</a></strong>
+            <div class="small">Reporting and analysis on how wide-area detection systems create a surveillance environment that looks like ordinary policing but operates on an unprecedented scale.</div>
+          </li>
+          <li>
+            <strong><a href="https://www.eff.org/deeplinks/2021/08/license-plate-readers-are-not-safety-solution" target="_blank" rel="noopener noreferrer">EFF | Why ALPRs are not a safety solution</a></strong>
+            <div class="small">Critique of the idea that public safety can be improved simply by collecting larger volumes of location data.</div>
+          </li>
+          <li>
+            <strong><a href="https://www.brennancenter.org/our-work/analysis-opinion/cities-should-be-skeptical-license-plate-reader-technology" target="_blank" rel="noopener noreferrer">Brennan Center | Cities should be skeptical</a></strong>
+            <div class="small">A clear explanation of why municipal adoption needs careful scrutiny and strong guardrails.</div>
+          </li>
+          <li>
+            <strong><a href="https://www.nytimes.com/topic/company/flock-safety" target="_blank" rel="noopener noreferrer">New York Times coverage of Flock Safety</a></strong>
+            <div class="small">Journalistic reporting on the company, its contracts, and the growing debate around its surveillance products.</div>
+          </li>
+          <li>
+            <strong><a href="https://www.washingtonpost.com/technology/2024/02/08/flock-safety-license-plate-readers/" target="_blank" rel="noopener noreferrer">Washington Post reporting on ALPR surveillance</a></strong>
+            <div class="small">Independent reporting on how ALPR networks expand surveillance, their costs, and the limits of their deterrent effect.</div>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Useful public-interest reference material</h2>
+        <ul class="resource-list">
+          <li>
+            <strong><a href="https://www.americanprogress.org/article/what-is-automated-license-plate-recognition-and-why-the-public-should-be-concerned/" target="_blank" rel="noopener noreferrer">Center for American Progress | What is ALPR and why should the public be concerned?</a></strong>
+            <div class="small">Explains the technology and why it raises serious concerns about civil liberties and unequal enforcement.</div>
+          </li>
+          <li>
+            <strong><a href="https://www.cdt.org/" target="_blank" rel="noopener noreferrer">Center for Democracy &amp; Technology</a></strong>
+            <div class="small">Institutional research on privacy, surveillance, and the policy consequences of tracking technologies.</div>
+          </li>
+          <li>
+            <strong><a href="https://www.techtransparencyproject.org/" target="_blank" rel="noopener noreferrer">Tech Transparency Project</a></strong>
+            <div class="small">Investigative reporting on how surveillance technology is sold, deployed, and justified in public-sector settings.</div>
+          </li>
+          <li>
+            <strong><a href="https://www.eff.org/" target="_blank" rel="noopener noreferrer">Electronic Frontier Foundation</a></strong>
+            <div class="small">A core source for digital rights and surveillance policy research.</div>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Bottom line</h2>
+        <p>
+          The central question is not whether cameras can detect a plate at a given moment. The real question is whether public agencies should build mass surveillance systems that track ordinary drivers across time, collect location histories at scale, and do so with limited public accountability while claiming broad public-safety benefits.
+        </p>
+        <p>
+          The evidence and reporting collected here suggest that the technology’s benefits are often overstated, while its privacy and civil-liberties costs are substantial.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Shurley Industries. Deflock resource index.</p>
+    </footer>
+  </body>
+</html>
